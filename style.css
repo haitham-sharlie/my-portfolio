@@ -73,7 +73,7 @@ section{
   min-height: 100vh;
   display:flex;
   flex-direction: column;
-  background: #000 url(profile.jpg) fixed center no-repeat;
+  background: #000 url(profile.webp) fixed center no-repeat;
   background-size: cover;
 }
 
