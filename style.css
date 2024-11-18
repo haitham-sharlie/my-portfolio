@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wdht@100;300;400;500;700&display=swap');
 :root{
-  --mainColor: #1E40AF;
+  --mainColor: #2563EB;
   --color: #fff;
 }
 
@@ -10,6 +10,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-smooth: always;
   text-transform: capitalize;
   text-decoration: none;
 }
@@ -113,6 +114,8 @@ section{
 .main-btn:hover{
   background-color: #1E3A8A;
   transform: scale(1.1);
+  color: #fff;
+}
 }
 
 .social-icons{
@@ -145,57 +148,104 @@ section{
   color: var(--mainColor);
 }
 
-.content{
+.skills-section {
+  padding: 6rem 3rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.skill-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 18rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: center;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.skill-icon {
+  font-size: 3rem;
+  color: var(--mainColor);
+  margin-bottom: 1rem;
+}
+
+.skill-card h3 {
+  font-size: 1.5rem;
+  color: var(--mainColor);
+  margin-bottom: 0.5rem;
+}
+
+.skill-card p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.cards-container{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
 }
 
-.content .card{
+.cards-container .card{
   background-color: #fff;
-  border: 1px solid #fff;
+  border: 1px solid #ddd;
   border-radius: 10px;
-  width: 16rem;
-  min-height: 14rem;
-  box-shadow: 0px 5px 25px  rgba(1, 1, 1,0.15) ;
+  width: 18rem;
+  -min-height: 14rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  transition: 0.3s linear;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.content .card:hover{
-  transform: scale(1.1);
+.cards-container .card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .projects{
   background-color: #020617;
 }
 
-.projects .content .card .project-image{
+.projects .cards-container .card .project-image{
   box-shadow: 0 1px 10px #0003;
   cursor: pointer;
 }
 
-.projects .content .card:hover .project-image{
+.projects .cards-container .card:hover .project-image{
   opacity: 0.9;
 }
 
-.projects .content .card .project-image img{
+.projects .cards-container .card .project-image img{
   width: 100%;
   height: 12.5rem;
 }
 
-.projects .content .card .project-info{
+.projects .cards-container .card .project-info{
   padding: 1rem;
 }
 
-.projects .content .card .project-info .project-title{
+.projects .cards-container .card .project-info .project-title{
   font-size: 0.9rem;
   font-weight: 600;
   color: #000;
 }
 
-.projects .content .card .project-info .project-category{
+.projects .cards-container .card .project-info .project-category{
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
@@ -204,37 +254,37 @@ section{
   margin-top: .8rem;
 }
 
-.projects .content .card .project-info .project-category .more-details{
+.projects .cards-container .card .project-info .project-category .more-details{
   color: var(--mainColor);
 }
 
-.projects .content .card .project-info .project-category .more-details:hover{
+.projects .cards-container .card .project-info .project-category .more-details:hover{
   color: #172554;
 }
 
-.contact .content .card{
-  padding: 1.5rem;
+.contact .cards-container .card{
+  padding: 2rem;
 }
 
-.contact .content .card .icon{
+.contact .cards-container .card .icon{
   font-size: 8rem;
   text-align: center;
   color: var(--mainColor);
   height: 75%;
 }
 
-.contact .content .card .info{
+.contact .cards-container .card .info{
   text-align: center;
 }
 
-.contact .content .card .info h3{
+.contact .cards-container .card .info h3{
   color: var(--mainColor);
   font-size: 1.4rem;
   font-weight: 700;
   padding: .5rem;
 }
 
-.contact .content .card .info p{
+.contact .cards-container .card .info p{
   font-size: 1rem;
 }
 
@@ -273,7 +323,7 @@ section{
   .main h2 span{
     white-space: pre-wrap;
   }
-  .content{
+  .cards-container{
     flex-direction: column;
     align-items: center;
   }

@@ -4,27 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="My Profile Website it's Provide my Programing Projects ">
-  <meta name="author" content="Haitham Nassif">
+  <meta name="description" content="Haitham Sharlie - Front-End Developer and UI/UX Designer. Building responsive, user-friendly, and visually appealing websites to solve problems and enhance user interactions.">
+  <meta name="keywords" content="Haitham Sharlie, Front-End Developer, UI/UX Designer, Web Development, Responsive Design, Modern Websites">
+  <meta name="author" content="Haitham Sharlie">
+  <meta property="eg:img" content=""> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="profile1.jpg">
-  <title>HaithamNSharlie</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Haitham Sharlie",
+    "jobTitle": "Front-End Developer",
+    "url": "https://haitham-sharlie.github.io/my-portfolio/",
+    "sameAs": [
+      "https://github.com/haitham-sharlie",
+      "https://www.linkedin.com/in/haitham-nassif-880216240"
+    ]
+  }
+  </script>
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EEE6NY83NQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-EEE6NY83NQ');
+  </script>
+  <title>Front-End Developer | UI/UX Designer | Haitham Sharlie</title>
 </head>
 <body>
   <header>
     <a href="#index.html" class="logo">Haitham</a>
     <nav class="navigation">
       <a href="#about">about</a>
+      <a href="#skills">skills</a>
       <a href="#projects">projects</a>
       <a href="#contact">contact</a>
     </nav>
   </header>
   <section class="main">
     <div>
-      <h2>Hello I'm Haitham<br><span>front-end developer</span></h2>
+      <h2>Welcome! I'm Haitham Sharlie<br><span>Front-End Developer</span></h2>
       <h3>i design websites</h3>
-      <a href="#projects" class="main-btn">view my work</a>
+      <a href="#projects" class="main-btn" title="Explore my web development projects">Explore My Work</a>
     </div>
     <div class="social-icons">
       <a href="www.linkedin.com/in/haitham-nassif-880216240" class="fab fa-linkedin"></a>
@@ -36,39 +61,41 @@
     </div>
   </section>
   <section class="about" id="about">
-    <h2 class="title">about me</h2>
-      <p>
-        Hello! I'm Haitham Sharlie, an enthusiastic and motivated beginner web developer with a strong foundation in HTML, CSS, and JavaScript.
-      </p>
-      <p>
-        I am passionate about web development and eager to learn and grow within the field.
-      </p>
-      <p>
-        I have already worked on several web projects and am committed to continuously improving my skills.
-      </p>
-      <p>
-        My goal is to expand my knowledge, take on new challenges, and ultimately contribute to creating impactful and innovative web solutions.
-      </p>
-      <p>
-        I believe that great design is not just about aesthetics; it’s about solving problems and enhancing user interactions.
-      </p>
-      <p>
-        My approach involves understanding client needs and translating them into visually appealing and functional designs.
-      </p>
-      <p>
-        In my portfolio you will find a selection of my work that showcases my craftsmanship and commitment to quality. I aim to create designs that resonate with users and achieve business goals.
-      </p>
-    <a href="#contact">
-      Let’s connect and bring your vision to life!
-    </a>
-  </section>  
+  <h2 class="title">About Me</h2>
+  <p>Hello! I'm <strong>Haitham Sharlie</strong>, a passionate Front-End Developer and UI/UX Designer. I specialize in building modern, responsive websites that provide seamless user experiences.</p>
+  <p>I have a strong background in HTML, CSS, and JavaScript, and I’m skilled in creating user-centered designs that combine functionality with creativity.</p>
+  <p>With hands-on experience in projects like e-commerce platforms, business websites, and digital portfolios, I bring your ideas to life with precision and attention to detail.</p>
+  <p>My mission is to deliver visually appealing websites that align with client goals and solve real-world problems.</p>
+  <p>When I’m not coding, I’m constantly learning new tools and technologies to stay ahead in the ever-evolving web development field.</p>
+  <a href="#contact">Ready to collaborate? Let’s connect!</a>
+</section>
+  <section id="skills" class="skills-section">
+    <h2 class="title">My Skills</h2>
+    <div class="skills-container">
+      <div class="skill-card">
+        <i class="fas fa-code skill-icon"></i>
+        <h3>Front-End Development</h3>
+        <p>Expert in HTML, CSS, and JavaScript to create responsive and interactive websites.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-pencil-ruler skill-icon"></i>
+        <h3>UI/UX Design</h3>
+        <p>Designing user-friendly interfaces with a focus on enhancing user experience.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-search skill-icon"></i>
+        <h3>SEO Optimization</h3>
+        <p>Optimizing websites to rank higher in search engines and enhance visibility.</p>
+      </div>
+    </div>
+</section>
   <section class="projects" id="projects">
     <h2 class="title">projects</h2>
-    <div class="content">
+    <div class="cards-container">
       <div class="card">
         <a href="https://haitham-sharlie.github.io/software-company/">
           <div class="project-image">
-            <img src="codehub.png">
+            <img src="codehub.png" alt="Responsive Website Design for Software Company">
           </div>
         </a>
         <div class="project-info">
@@ -82,7 +109,7 @@
       <div class="card">
         <a href="https://haitham-sharlie.github.io/Modern-Coffee-Shop-/">
           <div class="project-image">
-            <img src="coffee-shop.png">
+            <img src="coffee-shop.png" alt="Responsive Website Design for Modern Coffee Shop">
           </div>
         </a>
         <div class="project-info">
@@ -96,7 +123,7 @@
       <div class="card">
         <a href="https://haitham-sharlie.github.io/coffee-shop/">
           <div class="project-image">
-            <img src="classic-coffe.png">
+            <img src="classic-coffe.png" alt="Responsive Website Design for Coffee Shop">
           </div>
         </a>
         <div class="project-info">
@@ -110,7 +137,7 @@
       <div class="card">
         <a href="https://creatorweb.netlify.app/">
           <div class="project-image">
-            <img src="creators.png">
+            <img src="creators.png" alt="Responsive Website Design for Digital Products Store">
           </div>
         </a>
         <div class="project-info">
@@ -125,7 +152,7 @@
   </section>
   <section class="contact" id="contact">
     <h2 class="title">Let's work together</h2>
-    <div class="content">
+    <div class="cards-container">
       <div class="card">
         <div class="icon">
           <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em"><path fill="currentColor" d="M8.25 42q-.95 0-1.6-.65Q6 40.7 6 39.75V33q0-.8.5-1.4.5-.6 1.25-.75l5.95-1.3q.65-.15 1.3.075.65.225 1.15.775l4.75 4.9q4.4-2.4 7.875-5.85 3.475-3.45 6.275-8.1l-5-5.05q-.4-.4-.525-.975T29.5 14.05l1.35-6.3q.15-.8.675-1.275Q32.05 6 32.75 6h7q.95 0 1.6.65.65.65.65 1.6 0 6.1-3 12.125T31.2 31.2Q26.4 36 20.375 39 14.35 42 8.25 42ZM32.5 14.5l4.05 4.1q1.25-3 1.85-5.325Q39 10.95 39 9h-5.35l-1.15 5.5ZM9 39q2.25-.1 4.65-.7 2.4-.6 4.45-1.55l-3.95-4.15L9 33.65V39Zm9.1-2.25ZM36.55 18.6Z"/></svg>
