@@ -34,10 +34,96 @@ header{
 }
 
 .logo{
-  color: var(--color);
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.8rem;
+  width: 8.5rem;
+  padding: 2rem 1rem 1rem;
+}
+
+.logo .horizontal-line{
+  position: relative;
+  height: .4rem;
+  background-color: var(--color);
+}
+
+.logo .vertical-line{
+  width: .4rem;
+  height: .8rem;
+  background-color: var(--color);
+  position: absolute;
+  top: -.75rem;
+}
+
+.logo .v-line-1{
+  right: 40%;
+}
+
+.logo .v-line-2{
+  right: 60%;
+}
+
+.logo .circle{
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+  border: .3rem solid  var(--color);
+  background-color: var(--mainColor);
+  position: absolute;
+}
+
+.logo .circle-1{
+  right: -12%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.logo .circle-2{
+  right: -1%;
+  top: 50%;
+  transform: translateY(-100%);
+}
+
+.logo .circle-3{
+  right: -1%;
+  top: -100%;
+  transform: translateY(50%);
+}
+
+.logo .circle-4{
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.logo .dot{
+  background-color: var(--color);
+  width: .5rem;
+  height: .5rem;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.logo .dot-1{
+  right: 35%;
+  top: .6rem;
+}
+
+.logo .dot-2{
+  right: 45%;
+  top: .6rem;
+}
+
+.logo .dot-3{
+  right: 55%;
+  top: -1.5rem;
+}
+
+.logo .dot-4{
+  right: 65%;
+  top: -1.5rem;
+}
+
+.logo .dot-5{
+  right: 60%;
+  top: -2rem;
 }
 
 .navigation{
@@ -115,7 +201,6 @@ section{
   background-color: #1E3A8A;
   transform: scale(1.1);
   color: #fff;
-}
 }
 
 .social-icons{
