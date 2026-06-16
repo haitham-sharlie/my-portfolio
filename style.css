@@ -323,11 +323,11 @@ section{
 }
 
 .about-img img{
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
     border-radius: 50%;
     border: .2rem solid var(--main-color);
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .about-img .circle-spin{
